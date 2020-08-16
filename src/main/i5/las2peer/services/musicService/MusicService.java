@@ -168,7 +168,8 @@ public class MusicService extends RESTService {
         JSONArray a = new JSONArray();
         while(result.next()) {
             JSONObject songJson = new JSONObject();
-            songJson.put("title", result.getString("title"));
+            songJson.put("title", result.getString("title")); 
+            songJson.put("artist", result.getString("artist"));
             a.add(songJson);
         }
         statement.close();
