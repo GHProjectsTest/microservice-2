@@ -94,6 +94,50 @@ public class MusicService extends RESTService {
 
       /**
    * 
+   * postSong
+   *
+   * 
+   * @param payload  a JSONObject
+   * 
+   * @return Response 
+   * 
+   */
+  @POST
+  @Path("/songs")
+  @Produces(MediaType.APPLICATION_JSON)
+  @Consumes(MediaType.TEXT_PLAIN)
+  @ApiResponses(value = {
+       @ApiResponse(code = HttpURLConnection.HTTP_OK, message = "response")
+  })
+  @ApiOperation(value = "postSong", notes = " ")
+  public Response postSong(String payload) {
+    JSONObject payload_JSON = (JSONObject) JSONValue.parse(payload);
+
+
+
+
+     
+    // service method invocations
+
+     
+
+
+
+
+    // response
+    boolean response_condition = true;
+    if(response_condition) {
+      JSONObject result = new JSONObject();
+
+      
+
+      return Response.status(HttpURLConnection.HTTP_OK).entity(result.toJSONString()).build();
+    }
+    return null;
+  }
+
+  /**
+   * 
    * getSongs
    *
    * 
