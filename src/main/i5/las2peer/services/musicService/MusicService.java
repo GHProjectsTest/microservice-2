@@ -81,9 +81,9 @@ public class MusicService extends RESTService {
 
   @Api
   @SwaggerDefinition(
-      info = @Info(title = "2", version = "$Metadata_Version$",
-          description = "$Metadata_Description$",
-          termsOfService = "$Metadata_Terms$",
+      info = @Info(title = "2", version = "",
+          description = "",
+          termsOfService = "",
           contact = @Contact(name = "Philipp", email = "CAEAddress@gmail.com") ,
           license = @License(name = "BSD",
               url = "https://github.com/GHProjectsTest/microservice-2/blob/master/LICENSE.txt") ) )
